@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toy Shop</title>
-    <!--Font link-->
+ 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!--CSS file link-->
+ 
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- <script src="js/sidebar.js"></script> -->
+ 
     <script src="js/form.js"></script>
 
     <style>
@@ -109,7 +109,7 @@
     </style>
 </head>
 <body>
-    <!--Header Part Start-->
+    <!--Header Par -->
 
     <header>
        
@@ -122,19 +122,18 @@
         </nav>
 
         <div class="icons">
-            <a href="game.html" class="fa-solid fa-gamepad"></a>
-            <a href="user.html" class="fa-solid fa-circle-user"></a>
+ 
+            <a href="/Toy shop project/htdocs/user.html" class="fa-solid fa-circle-user"></a>
             <a href="cart.html" class="fas fa-shopping-cart"></a>
-            <a href="Calendar.html" class="fa-solid fa-calendar-days"></a>
+           
 
         </div>
 
 
-    </header>
-    <!--Header part end-->
+    </header> 
 
-    <!--HomePage start-->
-    <!--Slider start-->
+    <!--HomePage  -->
+    <!--Slider  -->
     <div class="line"></div>
 
     <div id="slider">
@@ -144,9 +143,9 @@
             <img src="images/3.png" alt="" style="margin-top: 10px;">
         </figure>
     </div>
-    <!--Slider end-->
+ 
 
-    <!--Theme starts-->
+    <!--Theme -->
     <div class="line"></div>
     <div class="header">
             <span class="indigo-text text-darken-2">THEMES</span>
@@ -174,8 +173,8 @@
     </section>
     <div class="line"></div>
 
-    <!--Theme ends-->
-    <!--company info starts-->
+ 
+    <!--company info  -->
 <section class="icons-container">
     <div class="icons">
         <img src="images/credit-card-regular.svg" alt="">
@@ -210,58 +209,57 @@
     </div>
     
 </section>
-<!--company info ends-->
-<!--
-    <section class="themes" id="themes">
-        <h1 class="heading">Most Sold</h1>
-        <div class="box-container">
-            
+ 
+ 
+
+<!--Contact Section -->
+<section class="contact" id="contact">
+    <h1 class="heading"><span>Contact</span> Us</h1>
+
+    <div class="row">
+        <form action="connect.php" method="post" name="formValidation" id="formValidation">
+            <div class="input-row">
+                <input type="text" name="name" placeholder="Name" class="box" required>
+            </div>
+            <div class="input-row">
+                <input type="email" name="email" placeholder="Email" class="box" required>
+            </div>
+            <div class="input-row">
+                <input type="number" name="number" placeholder="Number" class="box" required>
+            </div>
+            <div class="input-row">
+                <textarea name="message" class="box" placeholder="Message" cols="30" rows="10" required></textarea>
+            </div>
+            <div class="text-center">
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+        <div id="sentMessage" style="display: none;">
+            <h2>Message sent successfully!</h2>
         </div>
-    </section>
--->
-    <!--HomePage end-->
+        <div class="image">
+            <img src="images/formfoto.jpg" alt="">
+        </div>
+    </div>
+</section>
 
-<!--Contact Section start-->
-    <section class="contact" id="contact">
-        <h1 class="heading"><span>contact</span> us </h1>
-
-        <div class="row">
-            <form name="formValidation" id="formValidation" onsubmit="event.preventDefault(); messageSent()">
-                <div class="input-row">
-                    <input type="text" placeholder="Name" class="box" required>
-                </div>
-                <div class="input-row">
-                    <input type="email" placeholder="Email" class="box" required>
-                </div>
-                <div class="input-row">
-                    <input type="number" placeholder="Number" class="box" required>
-                </div>
-                <div class="input-row">
-                    <textarea name="" class="box" placeholder="Message" id="" cols="30" rows="10" required></textarea>
-                </div>
-            <div class="text-center" >
-                <input type="submit" value="send message" class="btn">
-            </div>
-            </form>
-            <div id="sentMessage" style="display: none;">
-                <h2>Message sent succesfully!</h2>
-              </div>
-            <div class="image">
-                <img src="images/formfoto.jpg" alt="">
-            </div>
-        </div> 
-
-
-    </section>
+<script>
+    function messageSent() {
+        document.getElementById('sentMessage').style.display = 'block';
+    }
+</script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
     <script type="text/javascript" src="js/javascript.js" ></script>
-<!--Contact Section end-->
+    <script src="js/user.js" defer></script>
+
+     
+ 
 
 
 
-<!--Footer section starts-->
+<!--Footer section -->
     <section class="footer" style="background-color: beige;">
         <div class="box-container">
             <div class="box">
@@ -275,9 +273,11 @@
             </div>
             <div class="box">
                 <h3>extra links</h3>
-                <a href="game.html">game</a>
+             
                 <a href="user.html">user login</a>
                 <a href="cart.html">cart</a>
+  
+
             </div>
             <div class="box">
                 <h3>locations</h3>
@@ -295,9 +295,9 @@
     </section>
 
 
-<!--Footer section ends-->
+ 
 
-<!--Credit carts starts-->
+<!--Credit carts -->
 <section class="icons-containerr">
     <div class="iconss">
         <img src="images/axess.svg" alt="">
@@ -350,7 +350,7 @@
 
 
 
-<!--Credit carts ends-->
+ 
 
 
 
